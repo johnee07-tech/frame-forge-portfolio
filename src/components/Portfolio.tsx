@@ -36,34 +36,27 @@ export default function Portfolio() {
                 }`}
                 style={{ transitionDelay: `${0.1 + index * 0.08}s` }}
               >
-                {/* Image */}
-                <div className="relative overflow-hidden bg-[#111113]">
-                  <div
-                    className={`${
-                      index === 0 || index === 5
-                        ? 'aspect-[2.2/1]'
-                        : 'aspect-[4/3]'
-                    } w-full overflow-hidden`}
-                  >
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      loading="lazy"
-                      className="h-full w-full object-cover opacity-80 transition-all duration-700 ease-out group-hover:scale-105 group-hover:opacity-100"
-                    />
-                  </div>
+               {/* Image */}
+<div className=" aspect-[3/2] overflow-hidden bg-[#111113]">
+  <div className="h-full w-full overflow-hidden">
+    <img
+      src={project.image}
+      alt={project.title}
+      loading="lazy"
+      className="h-full w-full object-cover opacity-80 transition-all duration-700 ease-out group-hover:scale-105 group-hover:opacity-100"
+    />
+  </div>
 
-                  {/* Year badge */}
-                  <div className="absolute top-4 right-4 bg-[#0a0a0b]/80 px-3 py-1 font-display text-xs font-medium text-white backdrop-blur-sm">
-                    {project.year}
-                  </div>
+  {/* Year badge */}
+  <div className="absolute top-4 right-4 bg-[#0a0a0b]/80 px-3 py-1 font-display text-xs font-medium text-white backdrop-blur-sm">
+    {project.year}
+  </div>
 
-                  {/* Hover arrow */}
-                  <div className="absolute bottom-4 right-4 flex h-10 w-10 items-center justify-center bg-[#d4af7a] opacity-0 transition-all duration-500 group-hover:opacity-100 group-hover:translate-y-0 translate-y-2">
-                    <ArrowUpRight size={18} className="text-[#0a0a0b]" />
-                  </div>
-                </div>
-
+  {/* Hover arrow */}
+  <div className="absolute bottom-4 right-4 flex h-10 w-10 translate-y-2 items-center justify-center bg-[#d4af7a] opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
+    <ArrowUpRight size={18} className="text-[#0a0a0b]" />
+  </div>
+</div>
                 {/* Text */}
                 <div className="mt-5 flex items-start justify-between gap-4">
                   <div>

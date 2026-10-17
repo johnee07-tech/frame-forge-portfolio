@@ -1,5 +1,4 @@
 import { useScrollReveal } from '@/hooks/useScrollReveal';
-import { stats } from '@/data/content';
 
 export default function About() {
   const { ref, isVisible } = useScrollReveal();
@@ -32,27 +31,18 @@ export default function About() {
               <h2>
               <p className="text-lg leading-relaxed text-[#a1a1a8]">
                 <h2>
-                We are a multidisciplinary designing and development company based in
-                Abuja, Nigeria. For the past 4 years, We have been helping founders and
-                creative teams translate ambitious ideas into cohesive visual
-                systems and polished digital products.
+                FrameForge Innovations is a growing creative studio focused on graphic design, digital experiences, and web development. We bring ideas to life through thoughtful design, combining creativity and technology to help businesses communicate clearly and present themselves with confidence.
                 </h2>
               </p>
               <p className="opacity-100 mt-4 leading-relaxed text-[#a1a1a8]">
                 <h2>
-                Our approach is simple: strip away the unnecessary, amplify what
-                matters. We believe that a great design lives in the details — the
-                weight of a typeface, the rhythm of a grid, the feel of a
-                transition. Every project we take on starts with listening and
-                ends with something we are proud to put our name on.
+                We believe good design goes beyond appearance. Every colour, layout, image, and interaction should serve a purpose. Our approach combines creative thinking with attention to detail, helping us create visual identities and digital experiences that are distinctive, practical, and memorable.
                 </h2>
               </p>
               </h2>
               <p className="opacity-100 mt-4 leading-relaxed text-[#a1a1a8]">
                 <h2>
-                This approach has helped us in creating business brands that stand out,
-                professional, responsive and quality websites for both private and public businesses and so much more.
-                We take your ideas and transform them into pixels that speak for you. 
+                From logo concepts and promotional graphics to website design and user interfaces, our goal is to turn ideas into meaningful visual experiences. As we continue to grow and develop our craft, we're committed to delivering thoughtful solutions, learning from every project, and helping ambitious businesses move forward.
                 </h2>
               </p>
 

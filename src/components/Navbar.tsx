@@ -84,9 +84,9 @@ export default function Navbar() {
 
           {/* Mobile toggle */}
           <button
-            className="text-white md:hidden"
+            className="text-[#e0dcdc] md:hidden"
             onClick={() => setOpen((v) => !v)}
-            aria-label="Toggle menu"
+            aria-label="Menu"
           >
             {open ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -94,10 +94,12 @@ export default function Navbar() {
 
         {/* Mobile menu */}
         <div
-          className={`overflow-hidden border-t border-[#232327] transition-all duration-400 md:hidden ${
-            open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
-          }`}
-        >
+  className={`absolute left-0 right-0 top-full overflow-hidden border-t border-[#232327] bg-[#0a0a0b]/95 backdrop-blur-xl transition-[max-height,opacity] duration-300 ease-in-out md:hidden ${
+    open
+      ? 'max-h-96 opacity-100'
+      : 'max-h-0 opacity-0 border-transparent pointer-events-none'
+  }`}
+>
           <ul className="flex flex-col gap-1 py-4">
             {navLinks.map((link) => (
               <li key={link.href}>

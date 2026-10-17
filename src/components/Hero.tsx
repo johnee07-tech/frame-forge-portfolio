@@ -19,30 +19,30 @@ export default function Hero() {
             <div className="animate-fade-in-up">
               <span className="inline-flex items-center gap-2 border border-[#232327] bg-[#111113] px-4 py-2 text-xs font-medium tracking-wider text-[#a1a1a8] uppercase">
                 <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-[#d4af7a]" />
-                FF Inovations
+                Available for Projects
               </span>
             </div>
 
-            <h1
-              className="mt-8 font-display text-5xl font-extrabold leading-[1.05] tracking-tight text-white animate-fade-in-up sm:text-6xl pt-0 lg:text-7xl xl:text-8xl"
-              style={{ animationDelay: '0.1s', opacity: 0 }}
-            >
-              FrameForge
-            </h1>
-            <h2>
-              Crafting Digital Experiences with Precision and Purpose
-            </h2>
+            <div className="mt-8 animate-fade-in-up" style={{ animationDelay: '0.1s', opacity: 0 }}>
+
+  <h1 className="font-display text-5xl font-extrabold leading-[0.9] tracking-tight text-white sm:text-6xl lg:text-7xl xl:text-8xl">
+    FrameForge
+  </h1>
+
+  <h2 className="mt-1 font-display text-lg font-bold uppercase leading-none tracking-[0.15em] text-[#d4af7a] sm:text-xl lg:text-2xl">
+    Innovations
+  </h2>
+</div>
+            
+            <p className="mt-8 max-w-xl text-base font-medium leading-relaxed text-[#c4c4cc] sm:text-lg">
+               
+  Crafting digital experiences with precision and purpose.
+</p>
             <p
-              className="mt-6 max-w-xl font-display text-2xl font-medium leading-snug text-[#a1a1a8] animate-fade-in-up sm:text- pt-3"
+              className="mt-6 max-w-xl font-display text-2xl font-medium leading-snug text-[#a1a1a8] animate-fade-in-up sm:text- pt-3 xl:text-1x1"
               style={{ animationDelay: '0.2s', opacity: 0 }}
             >
-              <h2>
-              We are Specialized in: <br />
-              </h2>
-                 <h3>  
-                    Graphic designing & web developement, intentional
-                    visual systems for ambitious brands and start-up businesses.
-                 </h3>
+              We bring ideas to life through design and technology.
             </p>
 
             <p
@@ -50,9 +50,7 @@ export default function Hero() {
               style={{ animationDelay: '0.3s', opacity: 0 }}
             >
               <h2>
-              We help startups and creative studios turn ideas into refined
-              identities, interfaces, and digital experiences — from first
-              sketch to final pixel.
+              From distinctive logos and graphics to thoughtful interfaces and websites, we help businesses present their ideas with clarity and confidence.
               </h2>
             </p>
 
@@ -71,7 +69,7 @@ export default function Hero() {
                 />
               </a>
               <a
-                href="#contact"
+                href="#contact-form"
                 className="group inline-flex items-center justify-center gap-2 border border-[#33333a] px-7 py-4 text-sm font-semibold text-white transition-all duration-300 hover:border-[#d4af7a] hover:text-[#d4af7a]"
               >
                 Start a Project
@@ -89,14 +87,17 @@ export default function Hero() {
             style={{ animationDelay: '0.5s', opacity: 0 }}
           >
             <div className="border-l border-[#232327] pl-6">
-              <p className="font-display text-5xl font-extrabold text-white">
-                5<span className="text-[#d4af7a]">+</span>
-              </p>
-              <p className="mt-2 text-sm text-[#6b6b73]">
-                Years designing and building for the web
-              </p>
+              <div>
+  <p className="font-display text-lg font-bold tracking-wide text-white sm:text-xl">
+    DESIGN MEETS <span className="text-[#d4af7a]">TECHNOLOGY</span>
+  </p>
+
+  <p className="mt-3 max-w-xs text-sm leading-relaxed text-[#a1a1a8]">
+    Creative thinking, thoughtful design, and digital experiences built with purpose.
+  </p>
+</div>
               <div className="mt-8 space-y-3">
-                {['Branding', 'Web Designing', 'Product Designing (UI/UX)', 'Development'].map(
+                {['Graphic & Brand Design', 'Web Design', 'UI/UX Design', 'Front-end Development'].map(
                   (item) => (
                     <div
                       key={item}

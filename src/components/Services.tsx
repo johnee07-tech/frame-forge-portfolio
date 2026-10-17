@@ -1,14 +1,17 @@
-import { PenTool, Layout, Code, Smartphone, Sparkles, Image, ArrowUpRight } from 'lucide-react';
+import { PenTool, Layout, Code, Smartphone, Sparkles, Image, ArrowUpRight, Monitor, Megaphone, Fingerprint, Globe, Shapes } from 'lucide-react';
 import { useScrollReveal } from '@/hooks/useScrollReveal';
 import { services } from '@/data/content';
 
 const iconMap: Record<string, typeof PenTool> = {
-  PenTool,
+  Shapes,
   Layout,
   Code,
   Smartphone,
   Sparkles,
   Image,
+  Globe,
+  Megaphone,
+  Fingerprint,
 };
 
 export default function Services() {
